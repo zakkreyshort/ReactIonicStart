@@ -13,23 +13,23 @@ class Home extends Component {
                 <IonPage>
                     <IonTabs>
                         <IonRouterOutlet>
-                            <Route />
-                            <Route />
-                            <Route />
+                            <Route path="/:tab(tab1)" component={Tab1} exact/>
+                            <Route path="/:tab(tab2)" component={Tab2} exact />
+                            <Route path="/:tab(tab3)" component={Tab3} exact />
                         </IonRouterOutlet>
 
-                        <IonTabBar>
-                            <IonTabButton>
-                                <IonIcon />
-                                <IonLabel></IonLabel>
+                        <IonTabBar slot="bottom">
+                            <IonTabButton tab="home" href="/tab1">
+                                <IonIcon name="home" />
+                                <IonLabel>Tab 1</IonLabel>
                             </IonTabButton>
-                            <IonTabButton>
-                                <IonIcon />
-                                <IonLabel></IonLabel>
+                            <IonTabButton tab="settings" href="/tab2">
+                                <IonIcon name="settings"/>
+                                <IonLabel>Tab 2</IonLabel>
                             </IonTabButton>
-                            <IonTabButton>
-                                <IonIcon />
-                                <IonLabel></IonLabel>
+                            <IonTabButton tab="about" href="/tab3">
+                                <IonIcon name="information-circle" />
+                                <IonLabel>Tab 3</IonLabel>
                             </IonTabButton>
                         </IonTabBar>
 
