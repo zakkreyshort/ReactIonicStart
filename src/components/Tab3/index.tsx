@@ -9,7 +9,7 @@ export default class Tab3 extends React.Component {
                 <IonButtons>
                     <IonMenuButton></IonMenuButton>
                 </IonButtons>
-                <IonTitle>Tab 1</IonTitle>
+                <IonTitle>Tab 3</IonTitle>
             </IonToolbar>
         </IonHeader>
 
