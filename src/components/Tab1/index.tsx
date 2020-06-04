@@ -17,21 +17,31 @@ export default class Tab1 extends React.Component {
             <div className="ion-padding about-info">
                 <h4>Title goes here</h4>
 
-                <IonList>
+                <IonList lines="none">
                     <IonItem>
-                        <IonIcon></IonIcon>
-                        <IonLabel></IonLabel>
-                        <IonDatetime></IonDatetime>
+                        <IonIcon name="calendar" slot="start"></IonIcon>
+                        <IonLabel>Date Picker!</IonLabel>
+                        <IonDatetime displayFormat="MMM DD, YYYY" max="2056" value={null}></IonDatetime>
                     </IonItem>
 
                     <IonItem>
-                        
+                        <IonIcon name="pin" slot="start"></IonIcon>
+                        <IonLabel>Selector</IonLabel>
+                        <IonSelect>
+                            <IonSelectOption value="portland">Portland, Or</IonSelectOption>
+                            <IonSelectOption value="denver">Denver, Co</IonSelectOption>
+                            <IonSelectOption value="seattle">Seattle, Wa</IonSelectOption>
+                            <IonSelectOption value="sf">San Francisco, Ca</IonSelectOption>
+                        </IonSelect>
                     </IonItem>
-
                 </IonList>
+
+                <p>
+                    Could add some stuff here for fun!
+                </p>
 
             </div>
         </IonContent>
-        )
+        </>)
     }
 }
